@@ -1,0 +1,202 @@
+
+/*SPECIFICHE GENERICHE PER TUTTE LE PAGINE*/
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+main {
+    margin: 0 auto; /* centra orizzontalmente */
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #0033A0;
+    border-top: 1px solid #e9ecef;
+    /*position: fixed; Annullata per visionarlo solo in fondo alla pagina*/
+    bottom: 0;
+    width: 100%;
+}
+
+/*SPECIFICHE PER IL TITOLO PRINCIPALE DELLE PAGINE*/
+
+.nuovaPratica {
+    color: #0033A0;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*SPECIFICHE PER FORM E FIELDSET CON RELATIVO LEGEND (DIV)*/
+form {
+    max-width: 1200px;
+    gap: 1rem;
+    margin: 0 auto;
+    align-content: center;
+}
+
+.legend {
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    display: flex;
+    color: #0033A0;
+    margin: 4px 0 6px 10px
+}
+
+/*SPECIFICHE PER I FIELDSET*/
+
+fieldset {
+    gap: 1rem;
+    padding: 15px;
+    border: 0px solid #0033A0;
+    border-radius: 10px;
+    width: 100%;
+    margin: 0 auto;
+    background: #D6DEE7;
+}
+
+.fieldsetStandard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0 2rem;
+}
+
+.fieldsetDatiImmobile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: end;
+    gap: 0 3rem;
+    background: #D6DEE7;
+}
+
+.minorenne1,
+.minorenne2,
+.minorenne3{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0 2rem;
+}
+
+
+/*SPECIFICHE PER LE FORM GROUP (INPUT ,SELECT E LABEL). INCLUDE I TRE STANDARD DI LUNGHEZZE IMPOSTATE*/
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    height: 100%
+}
+
+.standard {
+    max-width: 250px
+}
+
+.data {
+    max-width: 120px
+}
+
+.small {
+    max-width: 50px
+}
+
+#indirizzoImmobile {
+    width: 250px;
+}
+
+.colonnelunghe {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.colonnecorte {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+
+}
+
+/*NASCONDE LE SEZIONI IMPOSTATE*/
+#delegato,
+.sezioneNascostaMinorenni,
+.gruppoDatiNascosto {
+    display: none;
+}
+
+#consegnaDelegato:checked + #delegato {
+    display: grid;
+}
+
+
+
+/*SPECIFICHE PER LA SEZIONE COMANDI E COMANDI STESSI*/
+
+.comandi {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+/*IMPOSTAZIONI PER RIDUZIONE SCHERMO (SMARTPHONE)*/
+
+@media (max-width: 600px) {
+    form, fieldset {
+        padding: 0;
+        /*gap: 0;*/
+    }
+
+    .fieldset-gridPers {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: start;
+        margin: 5px 0 10px 10px;
+    }
+
+    /*.nascosta {
+        margin: 5px 0 10px 10px;
+        gap: 50 px;
+    }*/
+
+    .fieldset-grid {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 0;
+        align-content: flex-start;
+        margin: 5px 0 10px 10px;
+    }
+
+    .form-group input,
+    .form-group select {
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        color: white;
+    }
+}
