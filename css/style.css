@@ -1,4 +1,40 @@
+/*IMPOSTAZIONI PER RIDUZIONE SCHERMO (SMARTPHONE)*/
 
+@media (max-width: 600px) {
+    form, fieldset {
+        padding: 0;
+        /*gap: 0;*/
+    }
+
+    .fieldset-gridPers {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: start;
+        margin: 5px 0 10px 10px;
+    }
+
+    /*.nascosta {
+        margin: 5px 0 10px 10px;
+        gap: 50 px;
+    }*/
+
+    .fieldset-grid {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 0;
+        align-content: flex-start;
+        margin: 5px 0 10px 10px;
+    }
+
+    .form-group input,
+    .form-group select {
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        color: white;
+    }
+}
 /*SPECIFICHE GENERICHE PER TUTTE LE PAGINE*/
 * {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -163,40 +199,4 @@ button {
     transition: background 0.3s, transform 0.2s;
 }
 
-/*IMPOSTAZIONI PER RIDUZIONE SCHERMO (SMARTPHONE)*/
 
-@media (max-width: 600px) {
-    form, fieldset {
-        padding: 0;
-        /*gap: 0;*/
-    }
-
-    .fieldset-gridPers {
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: start;
-        margin: 5px 0 10px 10px;
-    }
-
-    /*.nascosta {
-        margin: 5px 0 10px 10px;
-        gap: 50 px;
-    }*/
-
-    .fieldset-grid {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        gap: 0;
-        align-content: flex-start;
-        margin: 5px 0 10px 10px;
-    }
-
-    .form-group input,
-    .form-group select {
-        background-color: white;
-        margin: 0;
-        padding: 0;
-        color: white;
-    }
-}
