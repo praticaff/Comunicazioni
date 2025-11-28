@@ -3,7 +3,7 @@
 <html lang="it">
 
 <head>
-    <title>Ospitalit� e cessioni di fabbricato</title>
+    <title>Ospitalitï¿½ e cessioni di fabbricato</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -81,8 +81,8 @@
                         <div class="form-group">
                             <label for="tipoDocumentoCedente">Documento</label>
                             <select class="standard" id="tipoDocumentoCedente" name="tipoDocumentoCedente" required>
-                                <option value="CIE">Carta d'identit� elettronica</option>
-                                <option value="CI">Carta d'identit�</option>
+                                <option value="CIE">Carta d'identitï¿½ elettronica</option>
+                                <option value="CI">Carta d'identitï¿½</option>
                                 <option value="PAT">Patente di guida</option>
                                 <option value="PAS">Passaporto</option>
                             </select>
@@ -179,8 +179,8 @@
                         <div class="form-group">
                             <label for="tipoDocumentoCessionario">Documento</label>
                             <select id="tipoDocumentoCessionario" class="standard" name="tipoDocumentoCessionario" required>
-                                <option value="CIE">Carta d'identit� elettronica</option>
-                                <option value="CI">Carta d'identit�</option>
+                                <option value="CIE">Carta d'identitï¿½ elettronica</option>
+                                <option value="CI">Carta d'identitï¿½</option>
                                 <option value="PAS">Passaporto</option>
                                 <option value="PAS">Carta di soggiorno</option>
                             </select>
@@ -281,33 +281,35 @@
             <section id="datiImmobile">
                 <div class="legend">DATI IMMOBILE</div>
                 <fieldset>
-                    <div class="fieldsetDatiImmobile">
-                        <div class="colonnelunghe">
+		    <div class="fieldsetDatiImmobile">
+                        <div class="colonnalunga">
                             <div class="form-group">
-                                <label for="titolaritaImmobile">Titolarit� immobile</label>
+                                <label for="titolaritaImmobile">Titolarità immobile</label>
                                 <select id="titolaritaImmobile" class="standard" name="titolaritaImmobile" required>
                                     <option value="proprietario">Proprietario dell'immobile</option>
                                     <option value="affittuario">Titolare di contratto di locazione</option>
                                 </select>
                             </div>
-
+			</div>
+			<div class="colonnalunga">
                             <div class="form-group">
                                 <label for="indirizzoImmobile">Indirizzo</label>
                                 <input type="text" class="standard" id="indirizzoImmobile" name="indirizzoImmobile" required />
                             </div>
                         </div>
 
-                        <div class="colonnecorte">
+                        <div class="colonnacorta">
                             <div class="form-group">
                                 <label for="pianoImmobile">Piano</label>
                                 <input type="text" id="pianoImmobile" class="small" name="pianoImmobile" />
                             </div>
-
+			
                             <div class="form-group">
                                 <label for="scaleImmobile">Scale</label>
                                 <input type="text" id="scaleImmobile" class="small" name="scaleImmobile" />
                             </div>
-
+			</div>
+			<div class="colonnacorta">
                             <div class="form-group">
                                 <label for="vaniImmobile">Vani</label>
                                 <input type="text" id="vaniImmobile" class="small" name="vaniImmobile" required />
