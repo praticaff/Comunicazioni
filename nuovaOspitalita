@@ -283,7 +283,7 @@
                     <div class="fieldsetDatiImmobile">
                         <div class="colonnelunghe">
                             <div class="form-group">
-                                <label for="titolaritaImmobile">Titolarit� immobile</label>
+                                <label for="titolaritaImmobile">Titolarità immobile</label>
                                 <select id="titolaritaImmobile" class="standard" name="titolaritaImmobile" required>
                                     <option value="proprietario">Proprietario dell'immobile</option>
                                     <option value="affittuario">Titolare di contratto di locazione</option>

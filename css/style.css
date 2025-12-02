@@ -3,7 +3,6 @@
 @media (max-width: 480px) {
     form, fieldset {
         padding: 0;
-        /*gap: 0;*/
     }
 
 .fieldsetStandard {
@@ -12,33 +11,31 @@
     gap: 0 2rem;
 }
 
-/*.fieldsetDatiImmobile {
-	display: flex;
-        flex-wrap: wrap;
-        margin: 5px 0 10px 10px;
-        /*gap: 0 3rem;*/
-}*/
-
 .fieldsetDatiImmobile {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column; /* metti tutto in colonna */
+    gap: 15px; /* spazio tra blocchi */
   }
 
-  /* I piccoli restano uno sotto l’altro */
-  .colonnacorta {
-    flex-direction: row; /* se vuoi che restino in linea su smartphone */
-    gap: 10px;
+  /* Colonne diventano blocchi singoli a tutta larghezza */
+  .colonnelunghe,
+  .colonnecorte {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
-  .colonnacorta > div {
-    flex: 1 1 50%; /* due input piccoli affiancati */
+
+  /* Ogni form-group occupa tutta la riga */
+  .form-group {
+    width: 100%;
   }
 
-
-
-
-    /*.nascosta {
-        margin: 5px 0 10px 10px;
-        gap: 50 px;
-    }*/
+  /* Le input devono allargarsi */
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    box-sizing: border-box;
+  }
 
     .form-group {
         margin: 0;
@@ -46,6 +43,7 @@
         border-radius: 5px;
         border: 2 px solid black;
     }
+}
 
 /*SPECIFICHE GENERICHE PER TUTTE LE PAGINE*/
 * {
