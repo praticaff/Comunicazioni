@@ -46,7 +46,7 @@
         border-radius: 5px;
         border: 2 px solid black;
     }
-}
+
 /*SPECIFICHE GENERICHE PER TUTTE LE PAGINE*/
 * {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -75,6 +75,18 @@ footer {
     /*position: fixed; Annullata per visionarlo solo in fondo alla pagina*/
     bottom: 0;
     width: 100%;
+}
+
+/*SPECIFICHE PER LA HOMEPAGE*/
+
+.home{
+    color: #0033A0;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 /*SPECIFICHE PER IL TITOLO PRINCIPALE DELLE PAGINE*/
@@ -215,6 +227,5 @@ button {
 
 
 
-}
 
 
