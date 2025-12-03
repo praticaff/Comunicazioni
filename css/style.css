@@ -1,3 +1,49 @@
+/*IMPOSTAZIONI PER RIDUZIONE SCHERMO (SMARTPHONE)*/
+
+@media (max-width: 480px) {
+    form, fieldset {
+        padding: 0;
+    }
+
+.fieldsetStandard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0 2rem;
+}
+
+.fieldsetDatiImmobile {
+    display: flex;
+    flex-direction: column; /* metti tutto in colonna */
+    gap: 15px; /* spazio tra blocchi */
+  }
+
+  /* Colonne diventano blocchi singoli a tutta larghezza */
+  .colonnelunghe,
+  .colonnecorte {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* Ogni form-group occupa tutta la riga */
+  .form-group {
+    width: 100%;
+  }
+
+  /* Le input devono allargarsi */
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+    .form-group {
+        margin: 0;
+        padding: 0;
+        border-radius: 5px;
+        border: 2 px solid black;
+    }
+}
 
 /*SPECIFICHE GENERICHE PER TUTTE LE PAGINE*/
 * {
@@ -29,6 +75,23 @@ footer {
     width: 100%;
 }
 
+/*SPECIFICHE PER LA HOMEPAGE*/
+
+.home{
+    color: #0033A0;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.immagineBottone {
+    width: 200px;
+    height: 200px;
+}
+
 /*SPECIFICHE PER IL TITOLO PRINCIPALE DELLE PAGINE*/
 
 .nuovaPratica {
@@ -55,7 +118,7 @@ form {
     border: none;
     display: flex;
     color: #0033A0;
-    margin: 4px 0 6px 10px
+    margin: 4px 0 6px 10px;
 }
 
 /*SPECIFICHE PER I FIELDSET*/
@@ -77,12 +140,27 @@ fieldset {
 }
 
 .fieldsetDatiImmobile {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: end;
-    gap: 0 3rem;
-    background: #D6DEE7;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colonne uguali */
+  gap: 0 2rem;  /* distanza tra le colonne */
+}
+
+.colonnalunga {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.colonnacorta {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.colonnacorta > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .minorenne1,
@@ -99,37 +177,24 @@ fieldset {
 .form-group {
     display: flex;
     flex-direction: column;
-    height: 100%
+    height: 100%;
+    border-radius: 5px;
+    border: 2 px solid black;
+
 }
 
 .standard {
-    max-width: 250px
+    max-width: 250px;
 }
 
 .data {
-    max-width: 120px
+    max-width: 120px;
 }
 
 .small {
-    max-width: 50px
+    max-width: 50px;
 }
 
-#indirizzoImmobile {
-    width: 250px;
-}
-
-.colonnelunghe {
-    display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
-}
-
-.colonnecorte {
-    display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
-
-}
 
 /*NASCONDE LE SEZIONI IMPOSTATE*/
 #delegato,
@@ -163,40 +228,7 @@ button {
     transition: background 0.3s, transform 0.2s;
 }
 
-/*IMPOSTAZIONI PER RIDUZIONE SCHERMO (SMARTPHONE)*/
 
-@media (max-width: 600px) {
-    form, fieldset {
-        padding: 0;
-        /*gap: 0;*/
-    }
 
-    .fieldset-gridPers {
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: start;
-        margin: 5px 0 10px 10px;
-    }
 
-    /*.nascosta {
-        margin: 5px 0 10px 10px;
-        gap: 50 px;
-    }*/
 
-    .fieldset-grid {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        gap: 0;
-        align-content: flex-start;
-        margin: 5px 0 10px 10px;
-    }
-
-    .form-group input,
-    .form-group select {
-        background-color: white;
-        margin: 0;
-        padding: 0;
-        color: white;
-    }
-}
