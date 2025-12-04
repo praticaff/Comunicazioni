@@ -29,12 +29,25 @@ footer {
     font-size: 10px;
 }
 
+.home{
+    color: #0033A0;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+    
+
+
 .form-groupIndex{
     display: flex;
     flex-direction: column;
     height: 100%;
     border-radius: 5px;
     border: 2 px solid black;
+    align-content: center;
 }
 
 .fieldsetIndex{
@@ -46,13 +59,9 @@ footer {
     height: 200px;
     margin:0px;
     border:0px;
-}
-#formIndex{
-    width: 400px;
-    height: 200px;
-    align-content: center;
     max-width: 400px;
 }
+
 .credenziali{
     display: flex;
     flex-direction: column;
