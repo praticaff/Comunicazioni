@@ -204,5 +204,12 @@ button {
     padding: 0px;
     width: 400px;
     height: 200px;
+    margin:0px;
+    border:0px;
+}
+#formIndex{
+    width: 400px;
+    height: 200px;
+    align-content: center;
 }
 
