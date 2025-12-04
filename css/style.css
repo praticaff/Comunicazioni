@@ -115,13 +115,7 @@ fieldset {
     gap: 0 2rem;
 }
 
-.fieldsetIndex{
-    align-content: center;
-    background: #BFECFF;
-    border-radius: 15px;
-    padding: 15px;
-    max-width: 400px;
-}
+
 
 .minorenne1,
 .minorenne2,
@@ -189,7 +183,7 @@ button {
 }
 
 /* INDEX*/
-.titoloCredenziali{
+.titoloCredenziali {
     color: #0033A0;
     align-content:center;
     font-size: 10px;
@@ -201,5 +195,14 @@ button {
     height: 100%;
     border-radius: 5px;
     border: 2 px solid black;
+}
+
+.fieldsetIndex{
+    align-content: center;
+    background: #BFECFF;
+    border-radius: 15px;
+    padding: 0px;
+    width: 400px;
+    height: 200px;
 }
 
