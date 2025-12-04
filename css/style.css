@@ -120,6 +120,7 @@ fieldset {
     background: #BFECFF;
     border-radius: 15px;
     padding: 15px;
+    max-width: 400px;
 }
 
 .minorenne1,
@@ -187,7 +188,18 @@ button {
     transition: background 0.3s, transform 0.2s;
 }
 
+/* INDEX*/
+.titoloCredenziali{
+    color: #0033A0;
+    align-content:center;
+    font-size: 10px;
+}
 
-
-
+.form-groupIndex{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 5px;
+    border: 2 px solid black;
+}
 
