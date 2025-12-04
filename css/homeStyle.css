@@ -1,5 +1,28 @@
 /*SPECIFICHE PER LA HOMEPAGE*/
+/*SPECIFICHE GENERICHE PER TUTTE LE PAGINE*/
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
 
+main {
+    margin: 0 auto; /* centra orizzontalmente */
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #0033A0;
+    border-top: 1px solid #e9ecef;
+    bottom: 0;
+    width: 100%;
+}
 .home{
     color: #0033A0;
     font-size: 40px;

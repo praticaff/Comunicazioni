@@ -34,10 +34,6 @@ body {
     background-color: #F5F5F5;
 }
 
-*/*, *::before, *::after {
-    box-sizing: inherit;
-}*/
-
 footer {
     background-color: #f8f9fa;
     padding: 10px;
@@ -49,6 +45,9 @@ footer {
     width: 100%;
 }
 
+*/*, *::before, *::after {
+    box-sizing: inherit;
+}*/
 
 
 /*SPECIFICHE PER IL TITOLO PRINCIPALE DELLE PAGINE*/
