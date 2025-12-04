@@ -1,4 +1,19 @@
+/*SPECIFICHE PER LA HOMEPAGE*/
 
+.home{
+    color: #0033A0;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.immagineBottone {
+    width: 100px;
+    height: 100px;
+}
 
 
 

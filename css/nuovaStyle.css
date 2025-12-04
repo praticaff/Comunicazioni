@@ -45,27 +45,11 @@ footer {
     font-size: 14px;
     color: #0033A0;
     border-top: 1px solid #e9ecef;
-    /*position: fixed; Annullata per visionarlo solo in fondo alla pagina*/
     bottom: 0;
     width: 100%;
 }
 
-/*SPECIFICHE PER LA HOMEPAGE*/
 
-.home{
-    color: #0033A0;
-    font-size: 40px;
-    font-weight: bold;
-    padding: 5px;
-    border-radius: 10px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.immagineBottone {
-    width: 100px;
-    height: 100px;
-}
 
 /*SPECIFICHE PER IL TITOLO PRINCIPALE DELLE PAGINE*/
 
@@ -114,7 +98,6 @@ fieldset {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 0 2rem;
 }
-
 
 
 .minorenne1,
@@ -182,39 +165,5 @@ button {
     transition: background 0.3s, transform 0.2s;
 }
 
-/* INDEX*/
-.titoloCredenziali {
-    color: #0033A0;
-    align-content:center;
-    font-size: 10px;
-}
 
-.form-groupIndex{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    border-radius: 5px;
-    border: 2 px solid black;
-}
-
-.fieldsetIndex{
-    align-content: center;
-    background: #D6DEE7;
-    border-radius: 15px;
-    padding: 0px;
-    width: 400px;
-    height: 200px;
-    margin:0px;
-    border:0px;
-}
-#formIndex{
-    width: 400px;
-    height: 200px;
-    align-content: center;
-    max-width: 400px;
-}
-.credenziali{
-    display: flex;
-    flex-direction: column;
-}
 
