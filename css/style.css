@@ -1,17 +1,16 @@
 /*IMPOSTAZIONI PER RIDUZIONE SCHERMO (SMARTPHONE)*/
 
 @media (max-width: 480px) {
+
     form, fieldset {
         padding: 0;
     }
 
-.fieldsetStandard {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 0 2rem;
-}
-
-
+    .fieldsetStandard {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 0 2rem;
+    }
 
     .form-group {
         margin: 0;
@@ -35,9 +34,9 @@ body {
     background-color: #F5F5F5;
 }
 
-*, *::before, *::after {
+*/*, *::before, *::after {
     box-sizing: inherit;
-}
+}*/
 
 footer {
     background-color: #f8f9fa;
@@ -64,8 +63,8 @@ footer {
 }
 
 .immagineBottone {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
 }
 
 /*SPECIFICHE PER IL TITOLO PRINCIPALE DELLE PAGINE*/
@@ -116,29 +115,12 @@ fieldset {
     gap: 0 2rem;
 }
 
-/*.fieldsetDatiImmobile {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); 
-  gap: 0 2rem; 
-}*/
-
-/*.colonnalunga {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+.fieldsetIndex{
+    align-content: center;
+    background: #BFECFF;
+    border-radius: 15px;
+    padding: 15px;
 }
-
-.colonnacorta {
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
-}
-
-.colonnacorta > div {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}*/
 
 .minorenne1,
 .minorenne2,
