@@ -1,41 +1,16 @@
 /*IMPOSTAZIONI PER RIDUZIONE SCHERMO (SMARTPHONE)*/
 
 @media (max-width: 480px) {
+
     form, fieldset {
         padding: 0;
     }
 
-.fieldsetStandard {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 0 2rem;
-}
-
-.fieldsetDatiImmobile {
-    display: flex;
-    flex-direction: column; /* metti tutto in colonna */
-    gap: 15px; /* spazio tra blocchi */
-  }
-
-  /* Colonne diventano blocchi singoli a tutta larghezza */
-  .colonnelunghe,
-  .colonnecorte {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  /* Ogni form-group occupa tutta la riga */
-  .form-group {
-    width: 100%;
-  }
-
-  /* Le input devono allargarsi */
-  .form-group input,
-  .form-group select {
-    width: 100%;
-    box-sizing: border-box;
-  }
+    .fieldsetStandard {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 0 2rem;
+    }
 
     .form-group {
         margin: 0;
@@ -59,9 +34,9 @@ body {
     background-color: #F5F5F5;
 }
 
-*, *::before, *::after {
+*/*, *::before, *::after {
     box-sizing: inherit;
-}
+}*/
 
 footer {
     background-color: #f8f9fa;
@@ -88,8 +63,8 @@ footer {
 }
 
 .immagineBottone {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
 }
 
 /*SPECIFICHE PER IL TITOLO PRINCIPALE DELLE PAGINE*/
@@ -133,35 +108,14 @@ fieldset {
     background: #D6DEE7;
 }
 
-.fieldsetStandard {
+.fieldsetStandard,
+.fieldsetDatiImmobile {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 0 2rem;
 }
 
-.fieldsetDatiImmobile {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 colonne uguali */
-  gap: 0 2rem;  /* distanza tra le colonne */
-}
 
-.colonnalunga {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.colonnacorta {
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
-}
-
-.colonnacorta > div {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
 
 .minorenne1,
 .minorenne2,
@@ -228,7 +182,39 @@ button {
     transition: background 0.3s, transform 0.2s;
 }
 
+/* INDEX*/
+.titoloCredenziali {
+    color: #0033A0;
+    align-content:center;
+    font-size: 10px;
+}
 
+.form-groupIndex{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 5px;
+    border: 2 px solid black;
+}
 
-
+.fieldsetIndex{
+    align-content: center;
+    background: #D6DEE7;
+    border-radius: 15px;
+    padding: 0px;
+    width: 400px;
+    height: 200px;
+    margin:0px;
+    border:0px;
+}
+#formIndex{
+    width: 400px;
+    height: 200px;
+    align-content: center;
+    max-width: 400px;
+}
+.credenziali{
+    display: flex;
+    flex-direction: column;
+}
 
