@@ -199,7 +199,7 @@ button {
 
 .fieldsetIndex{
     align-content: center;
-    background: #BFECFF;
+    background: #D6DEE7;
     border-radius: 15px;
     padding: 0px;
     width: 400px;
@@ -211,5 +211,10 @@ button {
     width: 400px;
     height: 200px;
     align-content: center;
+    max-width: 400px;
+}
+.credenziali{
+    display: flex;
+    flex-direction: column;
 }
 
