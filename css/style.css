@@ -11,31 +11,7 @@
     gap: 0 2rem;
 }
 
-.fieldsetDatiImmobile {
-    display: flex;
-    flex-direction: column; /* metti tutto in colonna */
-    gap: 15px; /* spazio tra blocchi */
-  }
 
-  /* Colonne diventano blocchi singoli a tutta larghezza */
-  .colonnelunghe,
-  .colonnecorte {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  /* Ogni form-group occupa tutta la riga */
-  .form-group {
-    width: 100%;
-  }
-
-  /* Le input devono allargarsi */
-  .form-group input,
-  .form-group select {
-    width: 100%;
-    box-sizing: border-box;
-  }
 
     .form-group {
         margin: 0;
@@ -133,19 +109,20 @@ fieldset {
     background: #D6DEE7;
 }
 
-.fieldsetStandard {
+.fieldsetStandard,
+.fieldsetDatiImmobile {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 0 2rem;
 }
 
-.fieldsetDatiImmobile {
+/*.fieldsetDatiImmobile {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 colonne uguali */
-  gap: 0 2rem;  /* distanza tra le colonne */
-}
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 0 2rem; 
+}*/
 
-.colonnalunga {
+/*.colonnalunga {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -161,7 +138,7 @@ fieldset {
   display: flex;
   flex-direction: column;
   gap: 5px;
-}
+}*/
 
 .minorenne1,
 .minorenne2,
