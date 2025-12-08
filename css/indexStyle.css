@@ -4,12 +4,25 @@
 }
 
 main {
-    margin: 0 auto; /* centra orizzontalmente */
-    box-sizing: border-box;
+    display: flex;
+    justify-content: center;/*allinea orizzontalmente al centro*/
+    align-items: flex start;/*allinea verticalmente all'inizio*/
+    min-height: 100vh;
+ 
 }
 
 body {
     background-color: #F5F5F5;
+}
+
+/*TITOLO PRINCIPALE*/
+.home{
+    color: #0033A0;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 footer {
@@ -21,50 +34,50 @@ footer {
     border-top: 1px solid #e9ecef;
     bottom: 0;
     width: 100%;
-}
+} 
 
 .titoloCredenziali {
     color: #0033A0;
-    align-content:center;
-    font-size: 10px;
-}
-
-.home{
-    color: #0033A0;
-    font-size: 20px;
+    text-align:center;
+    margin:10px,0,20px,0;
+    font-size: 17px;
     font-weight: bold;
-    padding: 5px;
-    border-radius: 10px;
-    margin: 0 auto;
-    text-align: center;
 }
+
+
     
-
-
 .form-groupIndex{
     display: flex;
     flex-direction: column;
-    height: 100%;
-    border-radius: 5px;
-    border: 2 px solid black;
     align-content: center;
 }
+input{
+    font-size:10px;
+    text-align:left;
+    max-width: 400px;
+    border:none;
+    border-radius:5px;
+}
+
 
 .fieldsetIndex{
-    align-content: center;
+
     background: #D6DEE7;
     border-radius: 15px;
-    padding: 0px;
+    padding: 10px;
     width: 400px;
     height: 200px;
-    margin:0px;
-    border:0px;
+    margin:5px;
+    border:none;
     max-width: 400px;
 }
 
 .credenziali{
     display: flex;
     flex-direction: column;
+    /*align-items:center;*/
+    gap:10 px;
+    margin:15px,0,20px,0;
 }
 
 /*SPECIFICHE PER LA SEZIONE COMANDI E COMANDI STESSI*/
@@ -72,7 +85,8 @@ footer {
 .comandi {
     display: flex;
     justify-content: flex-end;
-    gap: 10px;
+    gap: 5px;
+    margin:30px,10px,15px,0;
 }
 
 button {
@@ -80,7 +94,6 @@ button {
     color: white;
     padding: 10px 20px;
     border: none;
-    margin: 10px;
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;

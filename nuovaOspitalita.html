@@ -125,7 +125,7 @@
                 </fieldset>
             </section>
 
-            <!-- DATI CEDENTE -->
+            <!-- DATI CEDSSIONARIO -->
             <section id="cessionario">
                 <div class="legend">CESSIONARIO</div>
                 <fieldset>
@@ -229,7 +229,7 @@
                     </div>
 
                     <div id="minorenne2" class="gruppoDatiNascosto, fieldsetStandard">
-
+                        <br>
                         <div class="form-group">
                             <label for="cognomeMinorenne2">Cognome</label>
                             <input type="text" class="standard" id="cognomeMinorenne2" name="cognomeMinorenne2" />
@@ -252,7 +252,7 @@
                     </div>
 
                     <div id="minorenne3" class="gruppoDatiNascosto, fieldsetStandard">
-
+                        <br>
                         <div class="form-group">
                             <label for="cognomeMinorenne3">Cognome</label>
                             <input type="text" class="standard" id="cognomeMinorenne3" name="cognomeMinorenne3" />
@@ -280,41 +280,38 @@
                 <div class="legend">DATI IMMOBILE</div>
                 <fieldset>
                     <div class="fieldsetDatiImmobile">
-                        <div class="colonnelunghe">
-                            <div class="form-group">
-                                <label for="titolaritaImmobile">Titolarità immobile</label>
-                                <select id="titolaritaImmobile" class="standard" name="titolaritaImmobile" required>
-                                    <option value="proprietario">Proprietario dell'immobile</option>
-                                    <option value="affittuario">Titolare di contratto di locazione</option>
-                                </select>
-                            </div>
 
-                            <div class="form-group">
-                                <label for="indirizzoImmobile">Indirizzo</label>
-                                <input type="text" class="standard" id="indirizzoImmobile" name="indirizzoImmobile" required />
-                            </div>
+                        <div class="form-group">
+                            <label for="titolaritaImmobile">Titolarità immobile</label>
+                            <select id="titolaritaImmobile" class="standardImmobile" name="titolaritaImmobile" required>
+                                <option value="proprietario">Proprietario dell'immobile</option>
+                                <option value="affittuario">Titolare di contratto di locazione</option>
+                            </select>
                         </div>
 
-                        <div class="colonnecorte">
-                            <div class="form-group">
-                                <label for="pianoImmobile">Piano</label>
-                                <input type="text" id="pianoImmobile" class="small" name="pianoImmobile" />
-                            </div>
+                        <div class="form-group">
+                            <label for="indirizzoImmobile">Indirizzo</label>
+                            <input type="text" class="standardImmobile" id="indirizzoImmobile" name="indirizzoImmobile" required />
+                        </div>
 
-                            <div class="form-group">
-                                <label for="scaleImmobile">Scale</label>
-                                <input type="text" id="scaleImmobile" class="small" name="scaleImmobile" />
-                            </div>
+                        <div class="form-group">
+                            <label for="pianoImmobile">Piano</label>
+                            <input type="text" id="pianoImmobile" class="smallImmobile" name="pianoImmobile" />
+                        </div>
 
-                            <div class="form-group">
-                                <label for="vaniImmobile">Vani</label>
-                                <input type="text" id="vaniImmobile" class="small" name="vaniImmobile" required />
-                            </div>
+                        <div class="form-group">
+                            <label for="scaleImmobile">Scale</label>
+                            <input type="text" id="scaleImmobile" class="smallImmobile" name="scaleImmobile" />
+                        </div>
 
-                            <div class="form-group">
-                                <label for="ingressiImmobile">Ingressi</label>
-                                <input type="text" id="ingressiImmobile" class="small" name="ingressiImmobile" required />
-                            </div>
+                        <div class="form-group">
+                            <label for="vaniImmobile">Vani</label>
+                            <input type="text" id="vaniImmobile" class="smallImmobile" name="vaniImmobile" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="ingressiImmobile">Ingressi</label>
+                            <input type="text" id="ingressiImmobile" class="smallImmobile" name="ingressiImmobile" required />
                         </div>
                     </div>
                 </fieldset>

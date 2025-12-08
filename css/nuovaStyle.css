@@ -1,24 +1,4 @@
-/*IMPOSTAZIONI PER RIDUZIONE SCHERMO (SMARTPHONE)*/
 
-@media (max-width: 480px) {
-
-    form, fieldset {
-        padding: 0;
-    }
-
-    .fieldsetStandard {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 0 2rem;
-    }
-
-    .form-group {
-        margin: 0;
-        padding: 0;
-        border-radius: 5px;
-        border: 2 px solid black;
-    }
-}
 
 /*SPECIFICHE GENERICHE PER TUTTE LE PAGINE*/
 * {
@@ -67,7 +47,7 @@ form {
     max-width: 1200px;
     gap: 1rem;
     margin: 0 auto;
-    align-content: center;
+    /*align-content: center;*/
 }
 
 .legend {
@@ -82,7 +62,6 @@ form {
 /*SPECIFICHE PER I FIELDSET*/
 
 fieldset {
-    gap: 1rem;
     padding: 15px;
     border: 0px solid #0033A0;
     border-radius: 10px;
@@ -91,13 +70,21 @@ fieldset {
     background: #D6DEE7;
 }
 
-.fieldsetStandard,
-.fieldsetDatiImmobile {
+.fieldsetStandard {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 0 2rem;
+    gap: 0 2rem; /*il primo spazio è per il row-gap (distanza tra le righe), il secondo per il column-gap( distanza tra gli elementi della riga)*/
 }
 
+.fieldsetDatiImmobile{
+    display:flex; /*flex serve perchè il contenut è su una riga sola (alrimenti si poteva usare inline-flex)*/
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    align-items:flex-start;
+    align-content:normal;
+    gap: 0 4rem; /*rem è il font della radice, si usa al posto di px perchè è piu adattivo*/
+    height: auto
+}
 
 .minorenne1,
 .minorenne2,
@@ -119,6 +106,10 @@ fieldset {
 
 }
 
+input, select {
+  box-sizing: border-box; /*serve per includere padding e border nella larghezza totale e uniforma select e input*/
+}
+
 .standard {
     max-width: 250px;
 }
@@ -130,7 +121,13 @@ fieldset {
 .small {
     max-width: 50px;
 }
-
+/*SPECIFICHE PER LE INPUT DELLA SEZIONE IMMOBILE*/
+.standardImmobile {
+    width: 250px;
+}
+.smallImmobile{
+    width:50px;
+}
 
 /*NASCONDE LE SEZIONI IMPOSTATE*/
 #delegato,
@@ -164,5 +161,26 @@ button {
     transition: background 0.3s, transform 0.2s;
 }
 
+/*IMPOSTAZIONI PER RIDUZIONE SCHERMO (SMARTPHONE)*/
 
+@media (max-width: 550px) {
+
+    .fieldsetStandard {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 0 2rem;
+    }
+
+    .fieldsetDatiImmobile{
+    display:flex; /*flex serve perchè il contenut è su una riga sola (alrimenti si poteva usare inline-flex)*/
+    flex-wrap:wrap;
+    flex-direction:column; /*imposta tutto in colonna quando lo schermo è piccolo*/
+    justify-content:flex-start;
+    align-items:flex-start;
+    align-content:flex-start;
+    gap: 0 4rem; /*rem è il font della radice, si usa al posto di px perchè è piu adattivo*/
+    height: auto
+}
+
+}
 
