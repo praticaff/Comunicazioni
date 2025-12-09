@@ -5,10 +5,9 @@
 
 main {
     display: flex;
-    justify-content: center;/*allinea orizzontalmente al centro*/
-    align-items: flex start;/*allinea verticalmente all'inizio*/
-    min-height: 100vh;
- 
+    justify-content: center;
+    /*align-items: flex start;
+    min-height: 100vh;*/
 }
 
 body {
@@ -44,7 +43,12 @@ footer {
     font-weight: bold;
 }
 
-
+.credenziali{
+    display: flex;
+    flex-direction: column;
+    gap:1rem,2rem;
+    margin:15px,0,20px,0;
+}
     
 .form-groupIndex{
     display: flex;
@@ -64,21 +68,15 @@ input{
 
     background: #D6DEE7;
     border-radius: 15px;
-    padding: 10px;
-    width: 400px;
+    padding: 15px;
+    width: 360px;
     height: 200px;
     margin:5px;
     border:none;
     max-width: 400px;
 }
 
-.credenziali{
-    display: flex;
-    flex-direction: column;
-    /*align-items:center;*/
-    gap:10 px;
-    margin:15px,0,20px,0;
-}
+
 
 /*SPECIFICHE PER LA SEZIONE COMANDI E COMANDI STESSI*/
 
@@ -97,6 +95,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;
+    margin:30px,10px,15px,0;
 }
 
 

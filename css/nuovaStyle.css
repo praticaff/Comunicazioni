@@ -11,7 +11,8 @@ main {
 }
 
 body {
-    background-color: #F5F5F5;
+    /*background-color: #F5F5F5;*/
+
 }
 
 footer {
@@ -67,7 +68,7 @@ fieldset {
     border-radius: 10px;
     width: 100%;
     margin: 0 auto;
-    background: #D6DEE7;
+    background: #cbdce6;
 }
 
 .fieldsetStandard {
@@ -101,13 +102,12 @@ fieldset {
     display: flex;
     flex-direction: column;
     height: 100%;
-    border-radius: 5px;
-    border: 2 px solid black;
-
 }
 
 input, select {
   box-sizing: border-box; /*serve per includere padding e border nella larghezza totale e uniforma select e input*/
+  border: none;
+  border-radius: 5px;
 }
 
 .standard {
