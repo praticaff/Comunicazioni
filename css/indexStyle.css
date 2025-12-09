@@ -7,16 +7,21 @@ main {
     display: flex;
     justify-content: center;/*allinea orizzontalmente al centro*/
     align-items: flex start;/*allinea verticalmente all'inizio*/
-    min-height: 100vh;
+    min-height: 100vh;/*altezza minima*/
  
 }
 
 body {
+    margin: 0;
+    padding: 0;
     background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;  /* centra orizzontalmente */
+    align-items: center;      /* centra verticalmente */
 }
 
-/*TITOLO PRINCIPALE*/
-.home{
+
+.home{/*TITOLO PRINCIPALE*/
     color: #0033A0;
     font-size: 25px;
     font-weight: bold;
@@ -25,7 +30,7 @@ body {
     text-align: center;
 }
 
-footer {
+footer {/*FOOTER*/
     background-color: #f8f9fa;
     padding: 10px;
     text-align: center;
@@ -36,7 +41,7 @@ footer {
     width: 100%;
 } 
 
-.titoloCredenziali {
+.titoloCredenziali {/*SOTTOTITOLO NELLA MASCHERA DI LOGIN*/
     color: #0033A0;
     text-align:center;
     margin:10px,0,20px,0;
@@ -45,39 +50,38 @@ footer {
 }
 
 
-    
-.form-groupIndex{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-}
-input{
-    font-size:10px;
-    text-align:left;
-    max-width: 400px;
-    border:none;
-    border-radius:5px;
-}
-
-
-.fieldsetIndex{
+.fieldsetIndex{/*FIELSET CHE INCLUDE TITOLO, INPUT E BOTTONE*/
 
     background: #D6DEE7;
     border-radius: 15px;
-    padding: 10px;
+    padding: 20px;
     width: 400px;
     height: 200px;
     margin:5px;
     border:none;
     max-width: 400px;
+    display: flex;
+    flex-direction: column;  /* verticale */
+    gap: 20px;               /* spazio tra elementi */
 }
 
-.credenziali{
+
+.form-groupIndex{
     display: flex;
     flex-direction: column;
-    /*align-items:center;*/
-    gap:10 px;
-    margin:15px,0,20px,0;
+    align-content: center;
+    gap:10px;
+}
+input{
+    font-size:14px;
+    text-align:left;
+    width: 200px;
+    height:42px;
+    border:none;
+    border-radius:5px;
+}
+label{
+  font-size:14px;  
 }
 
 /*SPECIFICHE PER LA SEZIONE COMANDI E COMANDI STESSI*/
