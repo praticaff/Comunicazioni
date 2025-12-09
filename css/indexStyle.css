@@ -37,7 +37,8 @@ body {
 
 
 .home{/*TITOLO PRINCIPALE*/
-    color: #0033A0;
+    /*color: #0033A0;*/
+    color: #a0006b;
     font-size: 25px;
     font-weight: bold;
     padding: 5px;
