@@ -3,21 +3,11 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-main {
-    display: flex;
-    justify-content: center;/*allinea orizzontalmente al centro*/
-    align-items: flex start;/*allinea verticalmente all'inizio*/
-    min-height: 100vh;/*altezza minima*/
- 
-}
 
 body {
     margin: 0;
     padding: 0;
     background-color: #F5F5F5;
-    display: flex;
-    justify-content: center;  /* centra orizzontalmente */
-    align-items: center;      /* centra verticalmente */
 }
 
 .fieldsetIndex{/*FIELSET CHE INCLUDE TITOLO, INPUT E BOTTONE*/
@@ -38,7 +28,7 @@ body {
 
 .home{/*TITOLO PRINCIPALE*/
     /*color: #0033A0;*/
-    color: #a0006b;
+    color: #0033A0;
     font-size: 25px;
     font-weight: bold;
     padding: 5px;
@@ -70,7 +60,7 @@ footer {/*FOOTER*/
     display: flex;
     flex-direction: column;
     align-content: center;
-    gap:10px;
+    gap:5px;
 }
 input{
     font-size:14px;
