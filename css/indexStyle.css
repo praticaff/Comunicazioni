@@ -15,8 +15,8 @@ body {
     background: #D6DEE7;
     border-radius: 15px;
     padding: 15px;
-    width: 300px;
-    height: 200px;
+    width: 250px;
+    height: 300px;
     border:none;
     max-width: 400px;
     display: flex;
@@ -90,6 +90,10 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.label{
+   color: #0033A0; 
 }
 
 
