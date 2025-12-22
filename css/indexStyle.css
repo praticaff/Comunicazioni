@@ -16,7 +16,7 @@ body {
     border-radius: 15px;
     padding: 15px;
     width: 250px;
-    height: 250px;
+    height: 230px;
     border:none;
     max-width: 400px;
     display: flex;
@@ -51,7 +51,7 @@ footer {/*FOOTER*/
     color: #0033A0;
     text-align:center;
     margin:10px,0,20px,0;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
 }
 
@@ -77,8 +77,8 @@ input{
 }
 label{
   font-size:14px;
-  color: #0033A0; 
-  font-weight: bold;
+  color: BLACK; 
+
 }
 
 /*SPECIFICHE PER LA SEZIONE COMANDI E COMANDI STESSI*/
