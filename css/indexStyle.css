@@ -16,7 +16,7 @@ body {
     border-radius: 15px;
     padding: 15px;
     width: 250px;
-    height: 300px;
+    height: 250px;
     border:none;
     max-width: 400px;
     display: flex;
@@ -55,6 +55,11 @@ footer {/*FOOTER*/
     font-weight: bold;
 }
 
+.credenziali{
+    display: flex;
+    flex-direction:column;
+    gap:15px;
+}
 
 .form-groupIndex{
     display: flex;
@@ -71,7 +76,8 @@ input{
     border-radius:5px;
 }
 label{
-  font-size:14px;  
+  font-size:14px;
+  color: #0033A0; 
 }
 
 /*SPECIFICHE PER LA SEZIONE COMANDI E COMANDI STESSI*/
@@ -88,13 +94,6 @@ button {
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
 }
-
-.label{
-   color: #0033A0; 
-}
-
-
-
