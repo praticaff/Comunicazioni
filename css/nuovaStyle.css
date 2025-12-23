@@ -11,7 +11,8 @@ main {
 }
 
 body {
-    background-color: #F5F5F5;
+    /*background-color: #F5F5F5;*/
+    background-color: #FAFAFA;
 }
 
 footer {
@@ -24,11 +25,6 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
-*/*, *::before, *::after {
-    box-sizing: inherit;
-}*/
-
 
 /*SPECIFICHE PER IL TITOLO PRINCIPALE DELLE PAGINE*/
 
@@ -82,7 +78,7 @@ fieldset {
     justify-content:flex-start;
     align-items:flex-start;
     align-content:normal;
-    gap: 0 4rem; /*rem è il font della radice, si usa al posto di px perchè è piu adattivo*/
+    gap: 0 3.8rem; /*rem è il font della radice, si usa al posto di px perchè è piu adattivo*/
     height: auto
 }
 
@@ -102,7 +98,8 @@ fieldset {
     flex-direction: column;
     height: 100%;
     border-radius: 5px;
-    border: 2 px solid black;
+    /*border: 2 px solid black;*/
+    border: none;
 
 }
 
@@ -136,9 +133,6 @@ input, select {
     display: none;
 }
 
-#consegnaDelegato:checked + #delegato {
-    display: grid;
-}
 
 
 
@@ -147,7 +141,7 @@ input, select {
 .comandi {
     display: flex;
     justify-content: flex-end;
-    gap: 10px;
+   /* gap: 10px;*/
 }
 
 button {
@@ -155,8 +149,8 @@ button {
     color: white;
     padding: 10px 20px;
     border: none;
-    margin: 10px;
-    border-radius: 5px;
+    /*margin: 10px;*/
+    border-radius: 7px;
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;
 }
