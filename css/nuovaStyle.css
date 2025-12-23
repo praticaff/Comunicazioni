@@ -11,9 +11,7 @@ main {
 }
 
 body {
-    /*background-color: #F5F5F5;*/
-    /*background-color: #FAFAFA;*/
-    background-color: #E8E8E8;
+    background-color: #F5F5F5;
     width: 100%;
 }
 
@@ -32,7 +30,7 @@ footer {
 
 .nuovaPratica {
     color: #0033A0;
-    font-size: clamp(16px, 4vw, 30px);/*INDICA 16PX MINIMO, 4% DEL VIEWPORT, 30PX MASSIMO*/
+    font-size: clamp(18px, 5vw, 30px);/*INDICA 16PX MINIMO, 4% DEL VIEWPORT, 30PX MASSIMO*/
     font-weight: bold;
     padding: 5px;
     border-radius: 10px;
@@ -109,7 +107,7 @@ input, select {
   border: none;
   border-color: white;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .standard {
