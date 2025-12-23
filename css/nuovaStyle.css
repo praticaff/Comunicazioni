@@ -64,8 +64,8 @@ fieldset {
     border-radius: 10px;
     width: 100%;
     margin: 0 auto;
-    background: #D6DEE7;
-    background: #4A4A4A;
+    /*background: #D6DEE7;*/
+    background: #bac9d9;
 }
 
 .fieldsetStandard {
