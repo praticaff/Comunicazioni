@@ -1,31 +1,42 @@
 /*CODICE PER IL CALCOLO DEL CODICE CATASTALE*/
 let comuni = [];
 
+const comune = document.getElementById("luogoNascitaCedente");
+const codice = document.getElementById("codiceCatastale");
+const provincia = document.getElementById("provinciaNascitaCedente");
+const datalist = document.getElementById("listaComuni");
+
 // fetch per leggere il JSON
 fetch("comuni.json")
   .then(response => response.json())
   .then(data => {
     comuni = data;
+
+    data.forEach(c => {
+      const option = document.createElement("option");
+      option.value = c.nome;
+      datalist.appendChild(option);
+    });
   })
+
   .catch(error => console.error("Errore nel caricamento del JSON:", error));
 
 // Prendi i riferimenti agli input
-const inputComune = document.getElementById("luogoNascitaCedente");
-const inputCodice = document.getElementById("codiceCatastale");
-const provinciaNascita = document.getElementById("provinciaNascitaCedente");
+
 
 // Aggiungi un evento al campo comune
-inputComune.addEventListener("blur", () => {
-  const nomeComune = inputComune.value.trim().toLowerCase();
+comune.addEventListener("blur", () => {
+  const nomeComune = comune.value.trim().toLowerCase();
 
   // Cerca il comune nel JSON
   const comuneTrovato = comuni.find(c => c.nome.toLowerCase() === nomeComune);
 
   if (comuneTrovato) {
-    codiceCatastale.value = comuneTrovato.codiceCatastale || "";
-    provinciaNascitaCedente.value = comuneTrovato.Provincia || "";
+    codice.value = comuneTrovato.codiceCatastale || "";
+    provincia.value = comuneTrovato.provincia.sigla || "";
   } else {
-    inputCodice.value = "Comune non trovato";
+    provinciaNascitaCedente.value = "";
+    codiceCatastale.value ="";
   }
 });
 

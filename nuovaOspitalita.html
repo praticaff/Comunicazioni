@@ -48,8 +48,8 @@
 
                         <div class="form-group">
                             <label for="luogoNascitaCedente">Luogo nascita</label>
-                            <input type="text" class="standard" list="comuniData[comune]" autocomplete="off" id="luogoNascitaCedente" name="luogoNascitaCedente" oninput="aggiornaLuogoNascitaCedente()" required />
-                            <datalist id="listaComuni"></datalist>
+                            <input type="text" class="standard" list="listaComuni" autocomplete="off" id="luogoNascitaCedente" name="luogoNascitaCedente" oninput="aggiornaLuogoNascitaCedente()" required />
+                            <datalist id="listaComuni"></datalist><!-- definisce la lista per il suggerimento dei comuni, viene poi richiamato in JS-->
                         </div>
 
                         <div class="form-group">

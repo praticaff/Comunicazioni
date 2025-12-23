@@ -98,14 +98,12 @@ fieldset {
     flex-direction: column;
     height: 100%;
     border-radius: 5px;
-    /*border: 2 px solid black;*/
-    border: none;
-    border-color: white;
-
 }
 
 input, select {
   box-sizing: border-box; /*serve per includere padding e border nella larghezza totale e uniforma select e input*/
+  border: none;
+  border-color: white;
 }
 
 .standard {
