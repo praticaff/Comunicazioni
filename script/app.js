@@ -1,7 +1,31 @@
-const comuniData = [
-    { comune: "Milano", provincia: { sigla: "MI" }, cap: ["20121", "20122"], codiceCatastale: "F205" },
-    { comune: "Roma", provincia: { sigla: "RM" }, cap: ["00100"], codiceCatastale: "H501" }
-];
+/*CODICE PER IL CALCOLO DEL CODICE CATASTALE*/
+let comuni = [];
+
+// fetch per leggere il JSON
+fetch("comuni.json")
+  .then(response => response.json())
+  .then(data => {
+    comuni = data;
+  })
+  .catch(error => console.error("Errore nel caricamento del JSON:", error));
+
+// Prendi i riferimenti agli input
+const inputComune = document.getElementById("comune");
+const inputCodice = document.getElementById("codice");
+
+// Aggiungi un evento al campo comune
+inputComune.addEventListener("blur", () => {
+  const nomeComune = inputComune.value.trim().toLowerCase();
+
+  // Cerca il comune nel JSON
+  const comuneTrovato = comuni.find(c => c.nome.toLowerCase() === nomeComune);
+
+  if (comuneTrovato) {
+    inputCodice.value = comuneTrovato.codiceCatastale || "";
+  } else {
+    inputCodice.value = "Comune non trovato";
+  }
+});
 
 /*CODICE PER COMPILAZIONE DATI MINORI*/
 
