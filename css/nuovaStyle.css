@@ -12,7 +12,9 @@ main {
 
 body {
     /*background-color: #F5F5F5;*/
-    background-color: #FAFAFA;
+    /*background-color: #FAFAFA;*/
+    background-color: #E8E8E8;
+    width: 100%;
 }
 
 footer {
@@ -30,7 +32,7 @@ footer {
 
 .nuovaPratica {
     color: #0033A0;
-    font-size: 30px;
+    font-size: clamp(16px, 4vw, 30px);/*INDICA 16PX MINIMO, 4% DEL VIEWPORT, 30PX MASSIMO*/
     font-weight: bold;
     padding: 5px;
     border-radius: 10px;
@@ -44,6 +46,7 @@ form {
     gap: 1rem;
     margin: 0 auto;
     /*align-content: center;*/
+    width: 100%;
 }
 
 .legend {
@@ -64,6 +67,7 @@ fieldset {
     width: 100%;
     margin: 0 auto;
     background: #D6DEE7;
+    background: #4A4A4A;
 }
 
 .fieldsetStandard {
@@ -79,7 +83,7 @@ fieldset {
     align-items:flex-start;
     align-content:normal;
     gap: 0 3.8rem; /*rem è il font della radice, si usa al posto di px perchè è piu adattivo*/
-    height: auto
+    height: auto;
 }
 
 .minorenne1,
@@ -104,6 +108,8 @@ input, select {
   box-sizing: border-box; /*serve per includere padding e border nella larghezza totale e uniforma select e input*/
   border: none;
   border-color: white;
+  background-color: white;
+  border-radius: 5px;
 }
 
 .standard {
@@ -160,6 +166,8 @@ button {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         gap: 0 2rem;
+        width: 95%;
+        
     }
 
     .fieldsetDatiImmobile{
@@ -170,7 +178,15 @@ button {
     align-items:flex-start;
     align-content:flex-start;
     gap: 0 4rem; /*rem è il font della radice, si usa al posto di px perchè è piu adattivo*/
-    height: auto
+    height: auto;
+    width: 95%;
+}
+
+input, select {
+  box-sizing: border-box; /*serve per includere padding e border nella larghezza totale e uniforma select e input*/
+  border: none;
+  border-color: white;
+  background-color: white;
 }
 
 }

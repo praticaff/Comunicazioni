@@ -1,13 +1,14 @@
 /*CODICE PER IL CALCOLO DEL CODICE CATASTALE*/
-let comuni = [];
+let comuni = []; /*array dove vengono salvati tutti i comuni*/
 
-const comune = document.getElementById("luogoNascitaCedente");
+const inputComune = document.getElementById("luogoNascitaCedente");
 const codice = document.getElementById("codiceCatastale");
 const provincia = document.getElementById("provinciaNascitaCedente");
 const datalist = document.getElementById("listaComuni");
 
-// fetch per leggere il JSON
-fetch("comuni.json")
+
+
+fetch("comuni.json") /* leggere il JSON*/
   .then(response => response.json())
   .then(data => {
     comuni = data;
@@ -25,8 +26,8 @@ fetch("comuni.json")
 
 
 // Aggiungi un evento al campo comune
-comune.addEventListener("blur", () => {
-  const nomeComune = comune.value.trim().toLowerCase();
+inputComune.addEventListener("blur", () => {
+  const nomeComune = inputComune.value.trim().toLowerCase();
 
   // Cerca il comune nel JSON
   const comuneTrovato = comuni.find(c => c.nome.toLowerCase() === nomeComune);
@@ -35,8 +36,8 @@ comune.addEventListener("blur", () => {
     codice.value = comuneTrovato.codiceCatastale || "";
     provincia.value = comuneTrovato.provincia.sigla || "";
   } else {
-    provinciaNascitaCedente.value = "";
-    codiceCatastale.value ="";
+    codice.value = "";
+    provincia.value ="";
   }
 });
 
