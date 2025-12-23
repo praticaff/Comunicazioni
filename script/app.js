@@ -10,8 +10,9 @@ fetch("comuni.json")
   .catch(error => console.error("Errore nel caricamento del JSON:", error));
 
 // Prendi i riferimenti agli input
-const inputComune = document.getElementById("comune");
-const inputCodice = document.getElementById("codice");
+const inputComune = document.getElementById("luogoNascitaCedente");
+const inputCodice = document.getElementById("codiceCatastale");
+const provinciaNascita = document.getElementById("provinciaNascitaCedente");
 
 // Aggiungi un evento al campo comune
 inputComune.addEventListener("blur", () => {
@@ -21,7 +22,8 @@ inputComune.addEventListener("blur", () => {
   const comuneTrovato = comuni.find(c => c.nome.toLowerCase() === nomeComune);
 
   if (comuneTrovato) {
-    inputCodice.value = comuneTrovato.codiceCatastale || "";
+    codiceCatastale.value = comuneTrovato.codiceCatastale || "";
+    provinciaNascitaCedente.value = comuneTrovato.Provincia || "";
   } else {
     inputCodice.value = "Comune non trovato";
   }
