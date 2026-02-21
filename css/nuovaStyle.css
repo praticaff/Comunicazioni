@@ -11,13 +11,9 @@ main {
 }
 
 body {
-<<<<<<< HEAD
     /*background-color: #F5F5F5;*/
-
-=======
     background-color: #F5F5F5;
     width: 100%;
->>>>>>> 7976e126ca3e19db6a606b77edd883eb20b61202
 }
 
 footer {
@@ -69,12 +65,9 @@ fieldset {
     border-radius: 10px;
     width: 100%;
     margin: 0 auto;
-<<<<<<< HEAD
-    background: #cbdce6;
-=======
+    /*background: #cbdce6;*/
     /*background: #D6DEE7;*/
     background: #bac9d9;
->>>>>>> 7976e126ca3e19db6a606b77edd883eb20b61202
 }
 
 .fieldsetStandard {
@@ -108,22 +101,16 @@ fieldset {
     display: flex;
     flex-direction: column;
     height: 100%;
-<<<<<<< HEAD
-=======
     border-radius: 5px;
->>>>>>> 7976e126ca3e19db6a606b77edd883eb20b61202
 }
 
 input, select {
   box-sizing: border-box; /*serve per includere padding e border nella larghezza totale e uniforma select e input*/
   border: none;
-<<<<<<< HEAD
   border-radius: 5px;
-=======
   border-color: white;
   background-color: white;
   border-radius: 3px;
->>>>>>> 7976e126ca3e19db6a606b77edd883eb20b61202
 }
 
 .standard {
