@@ -48,8 +48,8 @@
 
                         <div class="form-group">
                             <label for="luogoNascitaCedente">Luogo nascita</label>
-                            <input type="text" class="standard" list="comuniData[comune]" autocomplete="off" id="luogoNascitaCedente" name="luogoNascitaCedente" oninput="aggiornaLuogoNascitaCedente()" required />
-                            <datalist id="listaComuni"></datalist>
+                            <input type="text" class="standard" list="listaComuni" id="luogoNascitaCedente" name="luogoNascitaCedente" oninput="aggiornaLuogoNascitaCedente()" required />
+                            <datalist id="listaComuni"></datalist><!-- definisce la lista per il suggerimento dei comuni, viene poi richiamato in JS-->
                         </div>
 
                         <div class="form-group">
@@ -112,7 +112,7 @@
                     </div>
                 </fieldset>
             </section>
-            <!-- PERSONA DELEGATA -->
+
             <section id="delegato" class="sezioneNascostaDelegato">
                 <div class="legend">PERSONA DELEGATA</div>
                 <fieldset>
@@ -229,7 +229,6 @@
                     </div>
 
                     <div id="minorenne2" class="gruppoDatiNascosto, fieldsetStandard">
-                
                         <div class="form-group">
                             <label for="cognomeMinorenne2">Cognome</label>
                             <input type="text" class="standard" id="cognomeMinorenne2" name="cognomeMinorenne2" />
@@ -252,7 +251,6 @@
                     </div>
 
                     <div id="minorenne3" class="gruppoDatiNascosto, fieldsetStandard">
-                        
                         <div class="form-group">
                             <label for="cognomeMinorenne3">Cognome</label>
                             <input type="text" class="standard" id="cognomeMinorenne3" name="cognomeMinorenne3" />
