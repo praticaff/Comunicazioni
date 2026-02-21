@@ -61,13 +61,12 @@ form {
 
 fieldset {
     padding: 15px;
-    border: 0px solid #0033A0;
     border-radius: 10px;
     width: 100%;
     margin: 0 auto;
     /*background: #cbdce6;*/
-    /*background: #D6DEE7;*/
-    background: #bac9d9;
+    background-color: #97a1ac;
+    /*background: #bac9d9;*/
 }
 
 .fieldsetStandard {
