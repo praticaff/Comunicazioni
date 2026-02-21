@@ -11,8 +11,13 @@ main {
 }
 
 body {
+<<<<<<< HEAD
     /*background-color: #F5F5F5;*/
 
+=======
+    background-color: #F5F5F5;
+    width: 100%;
+>>>>>>> 7976e126ca3e19db6a606b77edd883eb20b61202
 }
 
 footer {
@@ -26,16 +31,11 @@ footer {
     width: 100%;
 }
 
-*/*, *::before, *::after {
-    box-sizing: inherit;
-}*/
-
-
 /*SPECIFICHE PER IL TITOLO PRINCIPALE DELLE PAGINE*/
 
 .nuovaPratica {
     color: #0033A0;
-    font-size: 30px;
+    font-size: clamp(18px, 5vw, 30px);/*INDICA 16PX MINIMO, 4% DEL VIEWPORT, 30PX MASSIMO*/
     font-weight: bold;
     padding: 5px;
     border-radius: 10px;
@@ -49,6 +49,7 @@ form {
     gap: 1rem;
     margin: 0 auto;
     /*align-content: center;*/
+    width: 100%;
 }
 
 .legend {
@@ -68,7 +69,12 @@ fieldset {
     border-radius: 10px;
     width: 100%;
     margin: 0 auto;
+<<<<<<< HEAD
     background: #cbdce6;
+=======
+    /*background: #D6DEE7;*/
+    background: #bac9d9;
+>>>>>>> 7976e126ca3e19db6a606b77edd883eb20b61202
 }
 
 .fieldsetStandard {
@@ -83,8 +89,8 @@ fieldset {
     justify-content:flex-start;
     align-items:flex-start;
     align-content:normal;
-    gap: 0 4rem; /*rem è il font della radice, si usa al posto di px perchè è piu adattivo*/
-    height: auto
+    gap: 0 3.8rem; /*rem è il font della radice, si usa al posto di px perchè è piu adattivo*/
+    height: auto;
 }
 
 .minorenne1,
@@ -102,12 +108,22 @@ fieldset {
     display: flex;
     flex-direction: column;
     height: 100%;
+<<<<<<< HEAD
+=======
+    border-radius: 5px;
+>>>>>>> 7976e126ca3e19db6a606b77edd883eb20b61202
 }
 
 input, select {
   box-sizing: border-box; /*serve per includere padding e border nella larghezza totale e uniforma select e input*/
   border: none;
+<<<<<<< HEAD
   border-radius: 5px;
+=======
+  border-color: white;
+  background-color: white;
+  border-radius: 3px;
+>>>>>>> 7976e126ca3e19db6a606b77edd883eb20b61202
 }
 
 .standard {
@@ -136,18 +152,13 @@ input, select {
     display: none;
 }
 
-#consegnaDelegato:checked + #delegato {
-    display: grid;
-}
-
-
 
 /*SPECIFICHE PER LA SEZIONE COMANDI E COMANDI STESSI*/
 
 .comandi {
     display: flex;
     justify-content: flex-end;
-    gap: 10px;
+   /* gap: 10px;*/
 }
 
 button {
@@ -156,7 +167,7 @@ button {
     padding: 10px 20px;
     border: none;
     margin: 10px;
-    border-radius: 5px;
+    border-radius: 7px;
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;
 }
@@ -169,6 +180,8 @@ button {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         gap: 0 2rem;
+        width: 95%;
+        
     }
 
     .fieldsetDatiImmobile{
@@ -179,7 +192,15 @@ button {
     align-items:flex-start;
     align-content:flex-start;
     gap: 0 4rem; /*rem è il font della radice, si usa al posto di px perchè è piu adattivo*/
-    height: auto
+    height: auto;
+    width: 95%;
+}
+
+input, select {
+  box-sizing: border-box; /*serve per includere padding e border nella larghezza totale e uniforma select e input*/
+  border: none;
+  border-color: white;
+  background-color: white;
 }
 
 }
