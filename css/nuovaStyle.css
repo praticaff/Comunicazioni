@@ -5,15 +5,27 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-main {
-    margin: 0 auto; /* centra orizzontalmente */
-    box-sizing: border-box;
-}
 
-body {
+
+html, body {
     /*background-color: #F5F5F5;*/
     background-color: #F5F5F5;
     width: 100%;
+    height: 100%;
+  margin: 0; /* Rimuovi i margini di default che creano barre di scorrimento fastidiose */
+  padding: 0;
+  overflow-x: hidden;/* Impedisce la comparsa di barre di scorrimento */
+}
+
+main{/*div principale che contiene tutto*/
+    flex: 1 1 auto;
+    min-height:0;
+    overflow:auto;
+    /*width:100%;
+    height:100%;*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 footer {
@@ -25,6 +37,8 @@ footer {
     border-top: 1px solid #e9ecef;
     bottom: 0;
     width: 100%;
+    height:5%;
+    position: fixed;
 }
 
 /*SPECIFICHE PER IL TITOLO PRINCIPALE DELLE PAGINE*/
@@ -58,6 +72,12 @@ form {
 }
 
 /*SPECIFICHE PER I FIELDSET*/
+section{
+    width:80%;
+    align-items:center;
+    margin: 0 auto;
+    padding:0;
+}
 
 fieldset {
     padding: 15px;

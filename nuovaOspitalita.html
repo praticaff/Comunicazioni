@@ -15,9 +15,9 @@
     </header>
     <!-- CONTENITORE PRINCIPALE -->
     <main>
-        <form action="/api/inserisci" method="POST">
-            <!-- DATI CEDENTE -->
-            <section id="cedente">
+        <!-- DATI CEDENTE -->
+        <section id="cedente">
+            <form action="/api/inserisci" method="POST" id="formCedente">
                 <div class="legend">CEDENTE</div>
                 <fieldset>
                     <div class="fieldsetStandard">
@@ -111,9 +111,11 @@
 
                     </div>
                 </fieldset>
-            </section>
+            </form>
+        </section>
 
-            <section id="delegato" class="sezioneNascostaDelegato">
+        <section id="delegato" class="sezioneNascostaDelegato">
+            <form action="/api/inserisci" method="POST" id="formPersonaDelegata">
                 <div class="legend">PERSONA DELEGATA</div>
                 <fieldset>
                     <div class="fieldsetStandard">
@@ -123,10 +125,12 @@
                         </div>
                     </div>
                 </fieldset>
+            </form>
             </section>
 
             <!-- DATI CEDSSIONARIO -->
-            <section id="cessionario">
+        <section id="cessionario">
+            <form action="/api/inserisci" method="POST" id="formCessionario">
                 <div class="legend">CESSIONARIO</div>
                 <fieldset>
                     <div class="fieldsetStandard">
@@ -200,10 +204,12 @@
                         </div>
                     </div>
                 </fieldset>
-            </section>
+            </form>
+        </section>
             <!-- DATI MINORENNI -->
-            <section id="datiMinorenne" class="sezioneNascostaMinorenni"> <!--VIENE NASCOSTA L'INTERA SECTION PER ABILITARLA CON JS'-->
-                <div class="legend"> DATI MINORENNI </div>
+        <section id="datiMinorenne" class="sezioneNascostaMinorenni"> <!--VIENE NASCOSTA L'INTERA SECTION PER ABILITARLA CON JS'-->
+            <form action="/api/inserisci" method="POST" id="formCedente">   
+            <div class="legend"> DATI MINORENNI </div>
                 <fieldset>
                     <div id="minorenne1" class="fieldsetStandard">
                     <!--IL PRIMO MINORENNE NON VIENE IMPOSTATO NASCOSTO PERCHe DEVE ESSERCENE ALMENO UNO-->
@@ -272,9 +278,11 @@
                         </div>
                     </div>
                 </fieldset>
-            </section>
+            </form>
+        </section>
             <!-- DATI IMMOBILE -->
-            <section id="datiImmobile">
+        <section id="datiImmobile">
+            <form action="/api/inserisci" method="POST" id="formDatiImmobile">
                 <div class="legend">DATI IMMOBILE</div>
                 <fieldset>
                     <div class="fieldsetDatiImmobile">
@@ -313,9 +321,11 @@
                         </div>
                     </div>
                 </fieldset>
-            </section>
+            </form>
+        </section>
             <!-- DATI PRATICA -->
-            <section id="datiPratica">
+        <section id="datiPratica">
+            <form action="/api/inserisci" method="POST" id="formDatiPratica">
                 <div class="legend">DATI PRATICA</div>
                 <fieldset>
                     <div class="fieldsetStandard">
@@ -347,12 +357,12 @@
 
                     </div>
                 </fieldset>
-            </section>
+            </form>
+        </section>
             <!-- COMANDI -->
-            <section class="comandi">
-                <button type="submit">Salva</button>
-            </section>
-        </form>
+        <section class="comandi">
+            <button type="submit">Salva</button>
+        </section>
         <br>
         <br>
         <br>

@@ -3,34 +3,40 @@
 * {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
-body{
-  margin: 0;      /* toglie il margine di default */
-  height: 100vh;  /* 100% dell'altezza della finestra */
-  width: 100vw;   /* 100% della larghezza della finestra */
-  margin: 0;
+html, body{
+  height: 100%;
+  /*width: 100%;*/
+  margin: 0; /* Rimuovi i margini di default che creano barre di scorrimento fastidiose */
+  padding: 0;
 }
-.page{
-    width:100%;
+.page{/*div principale che contiene tutto*/
+    /*width:100%;*/
+    
     height:100%;
     background-color: #F5F5F5;
     display:flex;
     flex-direction:column;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 .mainPage {
     display:flex;
     flex-direction:row;
-    /*flex: 1; /* Questo spinge il footer in basso */
     width:100%;
-    height:85%;
+    height:80%;
+    /*flex: 1 1 auto;
+    min-height:0;
+    overflow:auto;*/
     text-align: center;
     margin: 0;
+    /*padding: 2%;*/
 }
 .test{/*per test è il titolo della pagina che verrà iniettata*/
     font-size:60%;
     color: #0033A0;
     font-weight: bold;
-    padding: 5px;
+    padding: 2%;
     border-radius: 10px;
     margin: 0 auto;
     text-align: center;
@@ -61,32 +67,40 @@ margin: 0;
 
 .topBar{
 width:100%;
-height:10%;
+height:20%;
+/*flex:0 0 10%;*/
+display:flex;
+flex-direction:column;
 border: 2px solid black;
 margin: 0;
+/*padding: 2%;*/
 }
 .comandi{
     width:100%;
     height:50%;
     border: 2px solid black;
     margin: 0;
+    padding: 0;
 }
 .titolo{
     width:100%;
     height:50%;
     color: #0033A0;
-    font-size: 80%;
+    font-size: 50%;
     font-weight: bold;
-    padding: 0;
+    /*padding: 2%;*/
     margin: 0;
     text-align: center;
     border: 2px solid black;
 }
 .footer {
-    flex: 0 0 5%;
+    /*flex: 0 0 8%;*/
+    width:100%;
+    height:10%;
     display:flex;
     align-items:center;
-
+    font-family:serif;
+    padding:2%;
 }
 
 
