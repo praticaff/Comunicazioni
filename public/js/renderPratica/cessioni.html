@@ -1,0 +1,15 @@
+<script>//SCRIPT PER IMPORTARE I DATI DELLE CESSIONI DA VISUALIZZARE NEL CONTENT--SOSTITUIRA' IL CONTENUTO DELL'ATTRIBUTO TESTO RICERCA DELL'ARRAY
+( async ()=> { //INIZIA CON LA PARENTESI TONDA PERCHE VIENE DEFINITA ED ESEGUITA SUBITO
+try{ //PROVA ADE ESEGUIRE IL CODICE ALTRIMENTI IL CATCH (E) CATTURA L'ERRORE
+	const r =await fetch('http://167.235.147.132:8002/api/cessioni')//AWAIT PERMETTE AL BROWSER DI NON RIMANERE BLOCCATO (SI USA NELLA ASYNC) - r E' LA RESPONSE
+	if (!r.ok) throw new Error ('HTTP '+r.status);//STATO DELLA RESPONSE
+	const rows=await r.json();
+	document.getElementById('tbody').innerHTML= //PRENDE L'ID DEL TBODY DELLA TABELLA INIETTATA
+	rows.map(p => `<tr><td>${p.cognomeCedente}</td><td>${p.nomeCedente}</td><td>${p.dataNascitaCedente}</td><td>${p.cognomeCessionario}</td><td>${p.nomeCessionario}</td><td>${p.dataNascitaCessionario}</td><td>${p.dataInizio}</td><td>${p.dataFine}</td><td>${p.indirizzo}</td></tr>`).join('')||
+	`<tr><td colspan="9">NESSUN DATO</td></tr>`;//LA MAP VIENE APPLICATA SUL FILE JSON (ROWS) E SU OGNI RIGA APPLICA LA ARROW FUNCTION CHE CREA LA STRINGA HTML DA INIETTARE
+	}catch(e){//IN CASO DI ERRORI ESEGUE QUESTO CODICE
+		document.getElementById('tbody').innerHTML=
+		`<tr><td colspan="9">Errore:${e.message}</td></tr>`;
+		}
+)();//SI CHIUDE LA PARENTESI E () QUANDO DEVONO ESSERE DEFINITE ED ESEGUITE SUBITO
+</script>	

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestione Pratiche Polizia</title>
+  <link rel="stylesheet" href="./css/main.css" id="mainCss">
+</head>
+<body>
+	<div class="divBody" id="divBody">
+			<!--<div id="clerk-login"></div>
+			
+			 <button id="login-button">
+			Accedi
+			</button>
+			<form action="accedi" method="POST">
+				<fieldset>
+					<label for="user" >Username</label>
+					<input type="text" name="user" id="user"/>
+					
+					<label for="password" >Password</label>
+					<input type="text" name="password" id="password"/>
+				</fieldset>
+				<div class="actions">
+					<button id="accediButton" type="button">Accedi</button>
+				</div>
+			</form>-->
+	</div>
+	
+	<div class="footer">
+    © 2026 - Sistema interno Polizia | v1.0
+	</div>
+ <!-- carica il codice di Clerk prendendolo dal suo server
+	<script
+	  /defer
+	  crossorigin="anonymous"
+	  src="https://polished-clam-70.clerk.accounts.dev/npm/@clerk/ui@1/dist/ui.browser.js"
+	  type="text/javascript">
+	</script>-->
+	
+	<script
+	  defer
+	  crossorigin="anonymous"
+	  data-clerk-publishable-key="pk_test_cG9saXNoZWQtY2xhbS03MC5jbGVyay5hY2NvdW50cy5kZXYk"
+	  src="https://polished-clam-70.clerk.accounts.dev/npm/@clerk/clerk-js@6/dist/clerk.browser.js"
+	  type="text/javascript">
+	</script>
+	
+	<script type="module" src="./js/clerk.js"></script> <!-- carica il file che inizializza Clerk per verificare se l'utente è collegato o meno-->
+
+	<!--<script type="module">
+		const { startHomePage } = await import("./js/mainPageRender.js");
+		const button = document.getElementById("login-button");
+
+		button.addEventListener("click", async () => {
+			await startHomePage();
+		});
+	</script>-->
+</body>
+</html>
