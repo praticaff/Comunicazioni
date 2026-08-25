@@ -16,12 +16,13 @@ const {clerkMiddleware}= require ("@clerk/express");//middleware di Clerk per ve
 
 const app=express();//è il Router che riceve le richieste e deve elaborare le risposte. Deve anche indicare la next route nel caso ci siano ulteriori richieste verso altro app server
 
-
 const APP_HOST=process.env.APP_HOST//"0.0.0.0";//recupera da process.env (creato dalla lettura del file .env) l'indirizzo ip della mia macchina
 const APP_PORT=Number(process.env.APP_PORT) || 8003;//dallo stsso file recupera il numero di porta e lo converte da string a numero
 
 
 app.use (clerkMiddleware());
+
+app.use(express.json());
 
 /*==============================================================================================================================
 //APP.USE PER VERIFICARE LO STATO DELLE RICHIESTE
@@ -32,7 +33,6 @@ console.log("========== RICHIESTA ==========");
   console.log("URL:", req.originalUrl);
   next();
 });*/
-
 
 
 //==============================================================================================================================
@@ -75,14 +75,12 @@ app.use(system);
 
 app.use(auth);
 
-
 //==============================================================================================================================
 //AVVIA IL SERVER E LO METTE IN ASCOLTO SULLA PORTA - Mette express (app) in ascolto e crea un oggetto che lo rappresenta
 //==============================================================================================================================
 const server=app.listen(APP_PORT,APP_HOST,()=>{//${} serve per concatenare
 	console.log(`QuickHTTPServer:http://${APP_HOST}:${APP_PORT}`); //messaggio di conferma nel terminale, non apre nulla. Essendo un callback serve a capire che il server è partito
 });
-
 
 module.exports={app,server};//rendo disponbile app e server anche in altri file
 
